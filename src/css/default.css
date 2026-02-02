@@ -263,14 +263,14 @@ body:not(.SpicyLyrics_StaticBackground)
 
 #SpicyLyricsPageSvg {
   fill: currentColor;
-  transform: translateY(2px);
+  transform: translate3d(0, 2px, 0);
 }
 
 #SpicyLyrics_PopupLyricsButton svg {
   fill: var(--encore-icon-fill, currentColor);
   height: var(--encore-icon-height, var(--encore-graphic-size-decorative-base));
   width: var(--encore-icon-width, var(--encore-graphic-size-decorative-base));
-  transform: translateY(2px);
+  transform: translate3d(0, 2px, 0);
 }
 
 body.SpicySidebarLyrics__Active button:has(#SpicyLyricsPageSvg) {
@@ -278,7 +278,7 @@ body.SpicySidebarLyrics__Active button:has(#SpicyLyricsPageSvg) {
 }
 
 button:has(#SpicyLyricsPageSvg):after {
-  transform: translateX(-370%) translateY(-40%) !important;
+  transform: translate3d(-370%, -40%, 0) !important;
 }
 
 /* "Page Not Visible" fix */

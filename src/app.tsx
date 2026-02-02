@@ -239,91 +239,91 @@ async function main() {
 
         @keyframes Marquee_SongName {
           0% {
-            transform: translateX(calc(0px + min(-100% + 86cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 86cqw, 0px) * 0), 0, 0);
           }
           10% {
-            transform: translateX(calc(0px + min(-100% + 86cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 86cqw, 0px) * 0), 0, 0);
           }
           90% {
-            transform: translateX(calc(0px + min(-100% + 86cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 86cqw, 0px) * 1), 0, 0);
           }
           100% {
-            transform: translateX(calc(0px + min(-100% + 86cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 86cqw, 0px) * 1), 0, 0);
           }
         }
 
         @keyframes Marquee_SongName_SongMoreInfo {
           0% {
-            transform: translateX(calc(0px + min(-100% + 98cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 98cqw, 0px) * 0), 0, 0);
           }
           10% {
-            transform: translateX(calc(0px + min(-100% + 98cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 98cqw, 0px) * 0), 0, 0);
           }
           90% {
-            transform: translateX(calc(0px + min(-100% + 98cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 98cqw, 0px) * 1), 0, 0);
           }
           100% {
-            transform: translateX(calc(0px + min(-100% + 98cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 98cqw, 0px) * 1), 0, 0);
           }
         }
 
         @keyframes Marquee_Artists {
           0% {
-            transform: translateX(calc(0px + min(-100% + 81cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 81cqw, 0px) * 0), 0, 0);
           }
           10% {
-            transform: translateX(calc(0px + min(-100% + 81cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 81cqw, 0px) * 0), 0, 0);
           }
           90% {
-            transform: translateX(calc(0px + min(-100% + 81cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 81cqw, 0px) * 1), 0, 0);
           }
           100% {
-            transform: translateX(calc(0px + min(-100% + 81cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 81cqw, 0px) * 1), 0, 0);
           }
         }
 
         @keyframes Marquee_Artists_SongMoreInfo {
           0% {
-            transform: translateX(calc(0px + min(-100% + 98cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 98cqw, 0px) * 0), 0, 0);
           }
           10% {
-            transform: translateX(calc(0px + min(-100% + 98cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 98cqw, 0px) * 0), 0, 0);
           }
           90% {
-            transform: translateX(calc(0px + min(-100% + 98cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 98cqw, 0px) * 1), 0, 0);
           }
           100% {
-            transform: translateX(calc(0px + min(-100% + 98cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 98cqw, 0px) * 1), 0, 0);
           }
         }
 
         @keyframes Marquee_SongName_Compact {
           0% {
-            transform: translateX(calc(0px + min(-100% + 100cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 100cqw, 0px) * 0), 0, 0);
           }
           10% {
-            transform: translateX(calc(0px + min(-100% + 100cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 100cqw, 0px) * 0), 0, 0);
           }
           90% {
-            transform: translateX(calc(0px + min(-100% + 100cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 100cqw, 0px) * 1), 0, 0);
           }
           100% {
-            transform: translateX(calc(0px + min(-100% + 100cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 100cqw, 0px) * 1), 0, 0);
           }
         }
 
         @keyframes Marquee_Artists_Compact {
           0% {
-            transform: translateX(calc(0px + min(-100% + 100cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 100cqw, 0px) * 0), 0, 0);
           }
           10% {
-            transform: translateX(calc(0px + min(-100% + 100cqw, 0px) * 0));
+            transform: translate3d(calc(0px + min(-100% + 100cqw, 0px) * 0), 0, 0);
           }
           90% {
-            transform: translateX(calc(0px + min(-100% + 100cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 100cqw, 0px) * 1), 0, 0);
           }
           100% {
-            transform: translateX(calc(0px + min(-100% + 100cqw, 0px) * 1));
+            transform: translate3d(calc(0px + min(-100% + 100cqw, 0px) * 1), 0, 0);
           }
         }
 
@@ -609,23 +609,47 @@ async function main() {
     let lastImgUrl: string | null;
     // Store the DynamicBackground instance for reuse
     let nowPlayingBarDynamicBg: DynamicBackground | null = null;
+    // Cache the nowPlayingBar element to avoid expensive querySelector calls
+    let cachedNowPlayingBar: HTMLElement | null = null;
+    let lastNowPlayingBarLookup = 0;
+    const NOW_PLAYING_BAR_CACHE_TTL = 5000; // Re-query every 5 seconds max
 
     const CleanupNowBarDynamicBgLets = () => {
       if (nowPlayingBarDynamicBg != null) {
         nowPlayingBarDynamicBg.Destroy();
         nowPlayingBarDynamicBg = null;
       }
+      cachedNowPlayingBar = null; // Clear cache on cleanup
     };
+
+    function getNowPlayingBar(): HTMLElement | null {
+      const now = performance.now();
+      // Return cached element if still valid and exists in DOM
+      if (cachedNowPlayingBar && (now - lastNowPlayingBarLookup) < NOW_PLAYING_BAR_CACHE_TTL) {
+        // Quick check if element is still in DOM
+        if (cachedNowPlayingBar.isConnected) {
+          return cachedNowPlayingBar;
+        }
+      }
+      // Re-query and cache
+      lastNowPlayingBarLookup = now;
+      cachedNowPlayingBar = 
+        document.querySelector<HTMLElement>(".Root__right-sidebar aside.NowPlayingView") ??
+        document.querySelector<HTMLElement>(
+          `.Root__right-sidebar aside#Desktop_PanelContainer_Id:has(.main-nowPlayingView-coverArtContainer)`
+        );
+      return cachedNowPlayingBar;
+    }
 
     async function applyDynamicBackgroundToNowPlayingBar(coverUrl: string | undefined) {
       if (Defaults.hide_npv_bg) return;
       if (SpotifyPlayer.GetContentType() === "unknown" || SpotifyPlayer.IsDJ()) return;
       if (Defaults.StaticBackground || Defaults.CanvasBackground || coverUrl === undefined) return;
-      const nowPlayingBar =
-        document.querySelector<HTMLElement>(".Root__right-sidebar aside.NowPlayingView") ??
-        document.querySelector<HTMLElement>(
-          `.Root__right-sidebar aside#Desktop_PanelContainer_Id:has(.main-nowPlayingView-coverArtContainer)`
-        );
+      
+      // Early exit if cover URL hasn't changed (before expensive DOM operations)
+      if (coverUrl === lastImgUrl) return;
+      
+      const nowPlayingBar = getNowPlayingBar();
 
       try {
         if (!nowPlayingBar || isSpicySidebarMode) {
@@ -633,7 +657,6 @@ async function main() {
           CleanupNowBarDynamicBgLets();
           return;
         }
-        if (coverUrl === lastImgUrl) return;
 
         const existingElement = nowPlayingBar.querySelector<HTMLElement>(".spicy-dynamic-bg");
         nowPlayingBar.classList.add("spicy-dynamic-bg-in-this");
@@ -682,7 +705,9 @@ async function main() {
       CleanupNowBarDynamicBgLets();
     });
 
-    new IntervalManager(1, async () => {
+    // Increased from 1s to 3s since dynamic BG is also updated on song change
+    // This polling is just a fallback for edge cases
+    new IntervalManager(3, async () => {
       await applyDynamicBackgroundToNowPlayingBar(SpotifyPlayer.GetCover("large"));
     }).Start();
 
@@ -886,7 +911,7 @@ async function main() {
       // These interval managers are intentionally not stored in variables that are used elsewhere
       // They are self-running background processes that continue to run throughout the app lifecycle
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      new IntervalManager(Infinity, () => {
+      new IntervalManager(0.25, () => {
         const LoopState = Spicetify.Player.getRepeat();
         const LoopType: LoopType = LoopState === 1 ? "context" : LoopState === 2 ? "track" : "none";
         SpotifyPlayer.LoopType = LoopType;
@@ -901,7 +926,7 @@ async function main() {
       type ShuffleType = "smart" | "normal" | "none";
       let lastShuffleType: ShuffleType | null = null;
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      new IntervalManager(Infinity, () => {
+      new IntervalManager(0.25, () => {
         const ShuffleType: ShuffleType = (Spicetify.Player as any).origin._state.smartShuffle
           ? "smart"
           : (Spicetify.Player as any).origin._state.shuffle

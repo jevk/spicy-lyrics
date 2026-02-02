@@ -92,6 +92,25 @@ export default function ScrollIntoTopView(
 }
 
 /**
+ * Helper to get element's offset relative to a container without getBoundingClientRect()
+ * Uses offsetTop which doesn't trigger forced reflow
+ */
+function getOffsetTopRelativeToContainer(element: HTMLElement, container: HTMLElement): number {
+  let offset = 0;
+  let current: HTMLElement | null = element;
+  
+  while (current && current !== container && container.contains(current)) {
+    offset += current.offsetTop;
+    const parent = current.offsetParent as HTMLElement | null;
+    // If offsetParent is null or is the container, stop
+    if (!parent || parent === container) break;
+    current = parent;
+  }
+  
+  return offset;
+}
+
+/**
  * A simpler version of ScrollIntoTopView that uses CSS for smooth scrolling
  * This function relies on the CSS scroll-behavior: smooth property
  * @param container The container element to scroll
@@ -105,11 +124,10 @@ export function ScrollIntoTopViewCSS(
   offset: number = 0,
   instantScroll: boolean = false
 ) {
-  // Calculate the target position (top aligned)
-  const elementRect = element.getBoundingClientRect();
-  const containerRect = container.getBoundingClientRect();
+  // Calculate target position using offsetTop (avoids getBoundingClientRect reflow)
+  const elementOffsetTop = getOffsetTopRelativeToContainer(element, container);
 
-  const targetScrollTop = elementRect.top - containerRect.top + container.scrollTop - offset;
+  const targetScrollTop = elementOffsetTop - offset;
 
   // Toggle instant scroll mode if needed
   if (instantScroll) {

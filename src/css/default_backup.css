@@ -530,12 +530,12 @@ div.os-host:has(#SpicyLyricsPage) .ViewControls button {
 }
 
 #SpicyLyricsPage .lyricsParent .lyrics .line.NotSung .word {
-  transform: translateY(calc(var(--DefaultLyricsSize) * 0.01)) !important;
+  transform: translate3d(0, calc(var(--DefaultLyricsSize) * 0.01), 0) !important;
 }
 
 #SpicyLyricsPage .lyricsParent .lyrics .line.NotSung .letterGroup,
 #SpicyLyricsPage .lyricsParent .lyrics .line.NotSung .letter {
-  transform: translateY(calc(var(--DefaultLyricsSize) * 0.02)) !important;
+  transform: translate3d(0, calc(var(--DefaultLyricsSize) * 0.02), 0) !important;
 }
 
 #SpicyLyricsPage .lyricsParent .lyrics .line.NotSung .letter,
@@ -716,7 +716,7 @@ UNUSED:
 }
 
 #SpicyLyricsPage .lyricsParent .lyrics .line.musical-line.Active .dotGroup .dot.Active {
-  transform: scale(1.03) translateY(-0.035em) !important;
+  transform: scale(1.03) translate3d(0, -0.035em, 0) !important;
   transform-origin: center center;
   animation: musicalElemAnim ease-in-out 8s infinite;
   opacity: 1;
@@ -857,7 +857,7 @@ UNUSED:
 }
 
 button:has(#SpicyLyricsPageSvg):after {
-  transform: translateX(-370%) translateY(-40%) !important;
+  transform: translate3d(-370%, -40%, 0) !important;
 }
 
 #SpicyLyricsPage .lyricsParent .lyrics .Credits {

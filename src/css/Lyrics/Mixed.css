@@ -308,7 +308,7 @@
 #SpicyLyricsPage.SpicyRenderer .LyricsContainer .LyricsContent .line.FeelSung .letter {
   --text-shadow-blur-radius: 4px !important;
   --text-shadow-opacity: 0% !important;
-  transform: translateY(0) !important;
+  transform: translate3d(0, 0, 0) !important;
   scale: 1 !important;
 }
 

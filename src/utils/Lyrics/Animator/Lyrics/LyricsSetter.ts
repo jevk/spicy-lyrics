@@ -31,13 +31,11 @@ export function TimeSetter(PreCurrentPosition: number): void {
       // Type assertion for the line
       const line = lines[i] as any;
 
-      const lineTimes = {
-        start: line.StartTime,
-        end: line.EndTime,
-        total: line.EndTime - line.StartTime,
-      };
+      // Avoid object allocation - use direct property access
+      const lineStart = line.StartTime;
+      const lineEnd = line.EndTime;
 
-      if (lineTimes.start <= CurrentPosition && CurrentPosition <= lineTimes.end) {
+      if (lineStart <= CurrentPosition && CurrentPosition <= lineEnd) {
         line.Status = "Active";
 
         // Check if Syllables exists
@@ -67,7 +65,7 @@ export function TimeSetter(PreCurrentPosition: number): void {
             }
           }
         }
-      } else if (lineTimes.start >= CurrentPosition) {
+      } else if (lineStart >= CurrentPosition) {
         line.Status = "NotSung";
 
         // Check if Syllables exists
@@ -85,7 +83,7 @@ export function TimeSetter(PreCurrentPosition: number): void {
             }
           }
         }
-      } else if (lineTimes.end <= CurrentPosition) {
+      } else if (lineEnd <= CurrentPosition) {
         line.Status = "Sung";
 
         // Check if Syllables exists
@@ -110,13 +108,11 @@ export function TimeSetter(PreCurrentPosition: number): void {
       // Type assertion for the line
       const line = lines[i] as any;
 
-      const lineTimes = {
-        start: line.StartTime,
-        end: line.EndTime,
-        total: line.EndTime - line.StartTime,
-      };
+      // Avoid object allocation - use direct property access
+      const lineStart = line.StartTime;
+      const lineEnd = line.EndTime;
 
-      if (lineTimes.start <= CurrentPosition && CurrentPosition <= lineTimes.end) {
+      if (lineStart <= CurrentPosition && CurrentPosition <= lineEnd) {
         line.Status = "Active";
         if (line.DotLine) {
           const leads = line.Syllables.Lead;
@@ -131,7 +127,7 @@ export function TimeSetter(PreCurrentPosition: number): void {
             }
           }
         }
-      } else if (lineTimes.start >= CurrentPosition) {
+      } else if (lineStart >= CurrentPosition) {
         line.Status = "NotSung";
         if (line.DotLine) {
           const leads = line.Syllables.Lead;
@@ -140,7 +136,7 @@ export function TimeSetter(PreCurrentPosition: number): void {
             dot.Status = "NotSung";
           }
         }
-      } else if (lineTimes.end <= CurrentPosition) {
+      } else if (lineEnd <= CurrentPosition) {
         line.Status = "Sung";
         if (line.DotLine) {
           const leads = line.Syllables.Lead;

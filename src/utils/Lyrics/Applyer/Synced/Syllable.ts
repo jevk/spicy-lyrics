@@ -247,7 +247,7 @@ export function ApplySyllableLyrics(data: LyricsData, UseRomanized: boolean = fa
           word.style.setProperty("--text-shadow-opacity", `0%`);
           word.style.setProperty("--text-shadow-blur-radius", `4px`);
           word.style.scale = IdleEmphasisLyricsScale.toString();
-          word.style.transform = `translateY(calc(var(--DefaultLyricsSize) * 0.02))`;
+          word.style.transform = `translate3d(0, calc(var(--DefaultLyricsSize) * 0.02), 0)`;
         }
       } else {
         word.textContent =
@@ -258,7 +258,7 @@ export function ApplySyllableLyrics(data: LyricsData, UseRomanized: boolean = fa
           word.style.setProperty("--text-shadow-opacity", `0%`);
           word.style.setProperty("--text-shadow-blur-radius", `4px`);
           word.style.scale = IdleLyricsScale.toString();
-          word.style.transform = `translateY(calc(var(--DefaultLyricsSize) * 0.01))`;
+          word.style.transform = `translate3d(0, calc(var(--DefaultLyricsSize) * 0.01), 0)`;
         }
 
         word.classList.add("word");
@@ -356,7 +356,7 @@ export function ApplySyllableLyrics(data: LyricsData, UseRomanized: boolean = fa
               bwE.style.setProperty("--text-shadow-opacity", `0%`);
               bwE.style.setProperty("--text-shadow-blur-radius", `4px`);
               bwE.style.scale = IdleEmphasisLyricsScale.toString();
-              bwE.style.transform = `translateY(calc(var(--font-size) * 0.02))`;
+              bwE.style.transform = `translate3d(0, calc(var(--font-size) * 0.02), 0)`;
             }
           } else {
             bwE.textContent =
@@ -367,7 +367,7 @@ export function ApplySyllableLyrics(data: LyricsData, UseRomanized: boolean = fa
               bwE.style.setProperty("--text-shadow-opacity", `0%`);
               bwE.style.setProperty("--text-shadow-blur-radius", `4px`);
               bwE.style.scale = IdleLyricsScale.toString();
-              bwE.style.transform = `translateY(calc(var(--font-size) * 0.01))`;
+              bwE.style.transform = `translate3d(0, calc(var(--font-size) * 0.01), 0)`;
             }
 
             // Check if Syllables.Lead exists

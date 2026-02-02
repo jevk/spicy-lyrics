@@ -109,6 +109,25 @@ export default function ScrollIntoCenterView(
 }
 
 /**
+ * Helper to get element's offset relative to a container without getBoundingClientRect()
+ * Uses offsetTop which doesn't trigger forced reflow
+ */
+function getOffsetTopRelativeToContainer(element: HTMLElement, container: HTMLElement): number {
+  let offset = 0;
+  let current: HTMLElement | null = element;
+  
+  while (current && current !== container && container.contains(current)) {
+    offset += current.offsetTop;
+    const parent = current.offsetParent as HTMLElement | null;
+    // If offsetParent is null or is the container, stop
+    if (!parent || parent === container) break;
+    current = parent;
+  }
+  
+  return offset;
+}
+
+/**
  * A simpler version of ScrollIntoCenterView that uses CSS for smooth scrolling
  * This function relies on the CSS scroll-behavior: smooth property
  * @param container The container element to scroll
@@ -122,15 +141,14 @@ export function ScrollIntoCenterViewCSS(
   offset: number = 0,
   instantScroll: boolean = false
 ) {
-  // Calculate the target position (centered)
-  const elementRect = element.getBoundingClientRect();
-  const containerRect = container.getBoundingClientRect();
+  // Calculate target position using offsetTop (avoids getBoundingClientRect reflow)
+  const elementOffsetTop = getOffsetTopRelativeToContainer(element, container);
+  const elementHeight = element.offsetHeight;
+  const containerHeight = container.clientHeight;
 
   const targetScrollTop =
-    elementRect.top -
-    containerRect.top +
-    container.scrollTop -
-    (container.clientHeight / 2 - element.clientHeight / 2) -
+    elementOffsetTop -
+    (containerHeight / 2 - elementHeight / 2) -
     offset;
 
   // Toggle instant scroll mode if needed

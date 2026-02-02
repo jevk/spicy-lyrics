@@ -7,7 +7,7 @@ import storage from "../storage.ts";
 import { Lyrics } from "./Animator/Main.ts";
 import { PageContainer } from "../../components/Pages/PageView.ts";
 
-export const ScrollingIntervalTime = Infinity;
+export const ScrollingIntervalTime = .05;
 
 export const lyricsBetweenShow = storage.get("minimalLyricsMode") === "true" ? 5 : 3;
 

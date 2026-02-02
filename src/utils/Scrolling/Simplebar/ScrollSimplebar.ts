@@ -55,7 +55,7 @@ export function RecalculateScrollSimplebar() {
   ScrollSimplebar?.recalculate();
 }
 
-new IntervalManager(Infinity, () => {
+new IntervalManager(0.1, () => {
   if (!PageContainer) return;
   const LyricsContainer = PageContainer.querySelector<HTMLElement>(
     ".LyricsContainer .LyricsContent"

@@ -74,7 +74,7 @@ export default function Emphasize(
     letterElem.style.setProperty("--text-shadow-opacity", `0%`);
     letterElem.style.setProperty("--text-shadow-blur-radius", `4px`);
     letterElem.style.scale = IdleEmphasisLyricsScale.toString();
-    letterElem.style.transform = `translateY(calc(var(--DefaultLyricsSize) * 0.02))`;
+    letterElem.style.transform = `translate3d(0, calc(var(--DefaultLyricsSize) * 0.02), 0)`;
 
     word.appendChild(letterElem);
   });

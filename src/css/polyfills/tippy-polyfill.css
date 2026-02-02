@@ -35,23 +35,23 @@
 }
 
 .tippy-box[data-animation="shift-toward-subtle"][data-state="hidden"][data-placement^="top"][data-state="hidden"] {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
+  -webkit-transform: translate3d(0, -5px, 0);
+  transform: translate3d(0, -5px, 0);
 }
 
 .tippy-box[data-animation="shift-toward-subtle"][data-state="hidden"][data-placement^="bottom"][data-state="hidden"] {
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
+  -webkit-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
 }
 
 .tippy-box[data-animation="shift-toward-subtle"][data-state="hidden"][data-placement^="left"][data-state="hidden"] {
-  -webkit-transform: translateX(-5px);
-  transform: translateX(-5px);
+  -webkit-transform: translate3d(-5px, 0, 0);
+  transform: translate3d(-5px, 0, 0);
 }
 
 .tippy-box[data-animation="shift-toward-subtle"][data-state="hidden"][data-placement^="right"][data-state="hidden"] {
-  -webkit-transform: translateX(5px);
-  transform: translateX(5px);
+  -webkit-transform: translate3d(5px, 0, 0);
+  transform: translate3d(5px, 0, 0);
 }
 
 .main-contextMenu-tippyWrapper {
